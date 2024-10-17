@@ -1,0 +1,129 @@
+.padre
+{
+    padding: 5px;
+    background-color: rgb(247, 252, 206);
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    "header header header header header"
+    "logo logo logo logo logo"
+    "nav nav nav nav nav"
+    "carusel carusel carusel1 carusel1 resenia"
+    "titulo titulo titulo titulo resenia"
+    "cont1 cont2 cont3 cont4 resenia"
+    "foot foot foot foot foot";
+    grid-gap: 5px;
+}
+.padre .titulo
+{
+    grid-area: titulo;
+}
+.padre .header
+{
+    grid-area: header;
+    text-align: center;
+    font-family: "Lucida Handwriting", cursive;
+    padding: 10px;
+    font-size: 50px;
+    background-color: rgb(189, 30, 56);
+    color:white
+}
+.padre .logo
+{
+    grid-area: logo;
+    text-align: center;
+    background-color: orange;
+}
+.padre .nav
+{
+    grid-area: nav;
+    background-color: rgb(26, 24, 24);
+}
+.padre .carusel
+{
+    grid-area: carusel;
+}
+.padre .carusel1
+{
+    grid-area: carusel1;
+}
+.padre .cont1
+{
+    grid-area: cont1;
+}
+.padre .cont2
+{
+    grid-area: cont2;
+}
+.padre .cont3
+{
+    grid-area: cont3;
+}
+.padre .cont4
+{
+    grid-area: cont4;
+}
+.padre .resenia
+{
+    grid-area: resenia;
+    color: azure;
+    background-color: rgb(32, 67, 133);
+    padding: 10px;
+}
+.padre .foot
+{
+    grid-area: foot;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(22, 161, 3);
+    padding: 10px;
+    color:black;
+}
+.padre .foot .foot12 a 
+{
+    color: rgb(12, 12, 12);
+    text-decoration: none; 
+}
+.padre .foot .foot13 a 
+{
+    color: black;
+    text-decoration: none; 
+}
+.padre .foot .foot1 a 
+{
+    color: black;
+    text-decoration: none; 
+}
+.padre .foot .foot14 a 
+{
+    color: black;
+    text-decoration: none; 
+}
+.padre .foot1
+{
+    grid-area: foot1;
+    text-align: center;
+    background-color: rgb(22, 161, 3);
+}
+@media (max-width:700px)
+{
+    .padre
+    {
+    padding: 5px;
+    background-color: rgb(247, 252, 206);
+    display: grid;
+    grid-gap:5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header" 
+    "logo logo"
+    "nav nav" 
+    "carusel carusel"
+    "carusel1 carusel1" 
+    "resenia resenia" 
+    "titulo titulo" 
+    "cont1 cont2" 
+    "cont3 cont4"
+    "foot foot";            ;
+    }
+}

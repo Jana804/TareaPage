@@ -1,0 +1,95 @@
+.padre
+{
+    padding: 5px;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "cont1 cont1 cont1"
+    "cards cards cards"
+    "foot foot foot"
+    "foot1 foot1 foot1";
+    grid-gap: 5px;
+}
+.padre .header
+{
+    grid-area: header;
+    text-align: center;
+    font-family: "Lucida Handwriting", cursive;
+    padding: 10px;
+    font-size: 50px;
+    background-color: rgb(189, 30, 56);
+    color:white
+}
+.padre .nav
+{
+    grid-area: nav;
+    background-color: rgb(26, 24, 24);
+}
+.padre .cont1
+{
+    grid-area: cont1;
+    background-color: orange;
+    padding:5px;
+    text-align: center;
+}
+.padre .cards
+{
+    grid-area: cards;
+    display: flex;
+    justify-content: space-around;
+}
+.padre .foot
+{
+    grid-area: foot;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(22, 161, 3);
+    color:black;
+    padding: 10px;
+}
+.padre .foot .foot12 a 
+{
+    color: rgb(14, 13, 13);
+    text-decoration: none; 
+}
+.padre .foot .foot13 a 
+{
+    color: black;
+    text-decoration: none; 
+}
+.padre .foot .foot1 a 
+{
+    color: black;
+    text-decoration: none; 
+}
+.padre .foot .foot14 a 
+{
+    color: black;
+    text-decoration: none; 
+}
+@media (max-width:700px)
+{
+    .padre
+    {
+    padding: 5px;
+    background-color: rgb(247, 252, 206);
+    display: grid;
+    grid-gap:5px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header" 
+    "nav" 
+    "cards" 
+    "cont1"
+    "foot";            ;
+    }
+    .padre .cards
+    {
+    grid-area: cards;
+    display: flex;
+    flex-direction: column;
+    }
+}

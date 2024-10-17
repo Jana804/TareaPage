@@ -1,0 +1,99 @@
+.padre
+{
+    padding: 5px;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "filtro produc1"
+    "filtro produc2"
+    "foot foot"
+    "foot1 foot1";
+    grid-gap: 5px;
+}
+.padre .header
+{
+    grid-area: header;
+    text-align: center;
+    font-family: "Lucida Handwriting", cursive;
+    padding: 10px;
+    font-size: 50px;
+    background-color: rgb(189, 30, 56);
+    color:white
+}
+.padre .nav
+{
+    grid-area: nav;
+    background-color: rgb(26, 24, 24);
+}
+.padre .filtro
+{
+    grid-area: filtro;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    text-align: center;
+}
+.padre .produc1
+{
+    grid-area: produc1;
+    display:flex;
+    justify-content: space-around;
+}
+.padre .produc2
+{
+    grid-area: produc2;
+    display:flex;
+    justify-content: space-around;
+}
+.padre .foot
+{
+    grid-area: foot;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(22, 161, 3);
+    color:black;
+    padding: 10px;
+}
+.padre .foot .foot12 a 
+{
+    color: rgb(14, 13, 13);
+    text-decoration: none; 
+}
+.padre .foot .foot13 a 
+{
+    color: black;
+    text-decoration: none; 
+}
+.padre .foot .foot1 a 
+{
+    color: black;
+    text-decoration: none; 
+}
+.padre .foot .foot14 a 
+{
+    color: black;
+    text-decoration: none; 
+}
+@media (max-width:700px)
+{
+    .padre
+    {
+    padding: 5px;
+    background-color: rgb(247, 252, 206);
+    display: grid;
+    grid-gap:5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header" 
+    "nav nav" 
+    "filtro filtro"
+    "produc1 produc1"
+    "produc2 produc2" 
+    "resenia resenia" 
+    "titulo titulo" 
+    "foot foot";            ;
+    }
+}
